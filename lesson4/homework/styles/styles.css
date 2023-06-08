@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.footer {
+    background-color: rgb(222, 222, 183);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
