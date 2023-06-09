@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form style="display: flex; flex-direction: column; width: 300px;">
+        <label for="name">Повне ім'я</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="useremail" id="email" required>
+
+        <label for="password">Пароль</label>
+        <input type="password" name="userpassword" id="password" required>
+
+        <label for="confirm_password">Підтвердження пароля</label>
+        <input type="password" name="confirm_password" id="confirm_password" required>
+
+        <legend>Стать</legend>
+        <label for="m_sex">чоловіча</label>
+        <input type="radio" name="sex" id="m_sex" required>
+        <label for="w_sex">жіноча</label>
+        <input type="radio" name="sex" id="w_sex" required>
+
+        <label for="age">Вік</label>
+        <input type="number" name="age" id="age" required>
+
+        <label for="course">Курс</label>
+        <select name="course" id="course" aria-placeholder="Виберіть курс" required>
+            <option>Front-End</option>
+            <option>Back-End</option>
+            <option>Project Management</option>
+            <option>QA Manual</option>
+        </select>
+
+        <label for="address">Повна адреса проживання</label>
+        <textarea name="Address" id="address" cols="30" rows="10" placeholder="Країна, регіон, місто, вулиця"
+            required></textarea>
+
+        <label for="agree">Я погоджуюсь з обробкою персональних даних</label>
+        <input type="checkbox" name="Agree" id="agree" required>
+
+        <button type="submit">Зареєструватись</button>
+        <button type="reset">Очистити форму</button>
+
+    </form>
+</body>
+
+</html>
