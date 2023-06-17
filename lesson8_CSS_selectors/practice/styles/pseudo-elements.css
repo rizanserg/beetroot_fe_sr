@@ -1,0 +1,39 @@
+/* ::before */
+#before>p::before {
+    content: "Before";
+    font-size: 60px;
+    color: blueviolet;
+}
+
+/* ::after */
+#after>p::after {
+    content: "After";
+    font-size: 40px;
+    color: aqua;
+}
+
+/* ::first-letter */
+#first-line>p::first-letter {
+    content: L;
+    font-size: 50px;
+}
+
+/* ::marker */
+
+::marker {
+    color: rgb(177, 66, 63);
+}
+
+/* ul {
+    padding-left: 40px;
+} */
+
+#marker-exemple>ul>li::marker {
+    color: coral;
+}
+
+/* ::selection */
+#selection-exemple>p::selection {
+    color: blueviolet;
+    background-color: pink;
+}

@@ -1,0 +1,40 @@
+/* Attribute selectors */
+[data] {
+    color: blueviolet;
+}
+
+/* Attribute value selector*/
+[data-color="blue"] {
+    color: blue;
+}
+
+/* Attribut ~ selector */
+[data-description~="green"] {
+    color: green;
+}
+
+/* Attribut | selector */
+
+[data-position |="top"] {
+    color: brown;
+}
+
+/* Attribute ^ */
+[class^="text"] {
+    color: aquamarine;
+}
+
+/* Attribut $  */
+[class$="text"] {
+    color: rgb(190, 234, 125);
+}
+
+/* Attribute * selector */
+[class*=la] {
+    color: blueviolet;
+}
+
+/* Attribute value case-insensetiv selector ігнорує реєстр "Аа" */
+[class*="sm" i] {
+    color: rgb(224, 26, 92);
+}
