@@ -1,0 +1,45 @@
+.flex {
+    display: flex;
+}
+
+.direction_column {
+    flex-direction: column;
+}
+
+.site-header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    list-style: none;
+    gap: 1rem;
+}
+
+/* box-model */
+.padding {
+    padding-inline: 120px;
+    padding-block: 25px;
+}
+
+/* btn style */
+.btn-in {
+    padding: 13px 25px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+}
+
+.btn-up {
+    padding: 13px 25px;
+    background: #FF9900;
+    border-radius: 4px;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+.btn-Get_started {
+    padding: 13px 40px;
+    background: #FF9900;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
