@@ -39,6 +39,10 @@ input {
     margin-bottom: 15px;
 }
 
+.mb-h3 {
+    margin-top: 0;
+}
+
 .full-padding {
     padding-inline: 120px;
     padding-block: 25px;
