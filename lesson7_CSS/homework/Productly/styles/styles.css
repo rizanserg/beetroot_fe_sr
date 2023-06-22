@@ -39,10 +39,6 @@ body {
     gap: 2rem;
 }
 
-.wrapper {
-    padding: 100px 100px;
-}
-
 button {
     background-color: rgb(247, 247, 247);
 }
