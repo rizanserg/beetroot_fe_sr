@@ -1,0 +1,21 @@
+.text-centre {
+    text-align: center;
+}
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.text-title {
+    font-weight: 368px;
+    line-height: 58px;
+}
+
+.text-nav-footer {
+    font-size: 14px;
+}
+
+.text-gray {
+    color: #828282;
+}
