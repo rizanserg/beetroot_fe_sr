@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* box */
+.padd-top {
+    padding-top: 120px;
+    padding-inline: 135px;
+}
+
+.padd-bottom {
+    padding-bottom: 120px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.text {
+    font-family: Delius Unicase;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45.07px;
+    letter-spacing: 5%;
+}
+
+/* section architectural */
+.architectural {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-template-rows: auto repeat(2, minmax(50px, 1fr));
+    gap: 30px;
+    grid-template-areas:
+        "h-first h-first h-first"
+        "item-square item-landscape item-landscape"
+        "item-landscape2 item-landscape2 item-square2"
+        "item-square3 item-landscape3 item-landscape3";
+    justify-content: center;
+}
+
+.architectural>img {
+    width: 100%;
+}
+
+.h-first {
+    justify-self: center;
+    grid-area: h-first;
+}
+
+.item-landscape {
+    grid-area: item-landscape;
+}
+
+.item-landscape2 {
+    grid-area: item-landscape2;
+}
+
+.item-landscape3 {
+    grid-area: item-landscape3;
+}
+
+/* section still_life */
+.still_life {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-template-rows: auto repeat(4, minmax(50px, 1fr));
+    gap: 30px;
+    grid-template-areas:
+        "h-second h-second h-second"
+        "robert sean sean"
+        "john john dave"
+        "john john dave"
+        "leonard leonard rob";
+    justify-content: center;
+}
+
+.still_life>img {
+    width: 100%;
+}
+
+.h-second {
+    grid-area: h-second;
+    justify-self: center;
+}
+
+.sean {
+    grid-area: sean;
+}
+
+.john {
+    grid-area: john;
+}
+
+
+.dave {
+    grid-area: dave;
+}
+
+.leonard {
+    grid-area: leonard;
+}
+
+/* third section */
+.portrait {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-template-rows: auto repeat(5, minmax(50px, 1fr));
+    gap: 30px;
+    grid-template-areas:
+        "h-third h-third h-third"
+        "pooja dom seth"
+        "devn dom noah"
+        "media seth_doyle noah"
+        "media melissa melissa"
+        "brooke brooke clem";
+    justify-content: center;
+}
+
+.portrait>img {
+    width: 100%;
+}
+
+
+.portrait>h1:nth-child(1) {
+    grid-area: h-third;
+    justify-self: center;
+}
+
+.portrait>img:nth-child(3) {
+    grid-area: dom;
+}
+
+.portrait>img:nth-child(7) {
+    grid-area: media;
+}
+
+.portrait>img:nth-child(6) {
+    grid-area: noah;
+}
+
+.portrait>img:nth-child(9) {
+    grid-area: melissa;
+}
+
+.portrait>img:nth-child(10) {
+    grid-area: brooke;
+}
