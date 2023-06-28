@@ -15,7 +15,7 @@
 }
 
 .mb-50 {
-    margin-bottom: 50px;
+    margin-bottom: 1fr;
 }
 
 .text {
@@ -29,8 +29,8 @@
 /* section architectural */
 .architectural {
     display: grid;
-    grid-template-columns: repeat(3, minmax(50px, 1fr));
-    grid-template-rows: auto repeat(2, minmax(50px, 1fr));
+    grid-template-columns: repeat(3, minmax(1fr, 1fr));
+    grid-template-rows: auto repeat(2, minmax(1fr, 1fr));
     gap: 30px;
     grid-template-areas:
         "h-first h-first h-first"
@@ -64,8 +64,8 @@
 /* section still_life */
 .still_life {
     display: grid;
-    grid-template-columns: repeat(3, minmax(50px, 1fr));
-    grid-template-rows: auto repeat(4, minmax(50px, 1fr));
+    grid-template-columns: repeat(3, minmax(1fr, 1fr));
+    grid-template-rows: auto repeat(4, minmax(1fr, 1fr));
     gap: 30px;
     grid-template-areas:
         "h-second h-second h-second"
@@ -105,8 +105,8 @@
 /* third section */
 .portrait {
     display: grid;
-    grid-template-columns: repeat(3, minmax(50px, 1fr));
-    grid-template-rows: auto repeat(5, minmax(50px, 1fr));
+    grid-template-columns: repeat(3, minmax(1fr, 1fr));
+    grid-template-rows: auto repeat(5, minmax(1fr, 1fr));
     gap: 30px;
     grid-template-areas:
         "h-third h-third h-third"
