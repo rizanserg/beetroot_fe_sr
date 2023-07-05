@@ -5,55 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- styles -->
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/styles.css">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <title>Font_Face</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>documentation</title>
 </head>
 
 <body>
-    <div class="layout">
-        <!-- navigation -->
-        <header class="mb-70--header flex">
-            <h3 class="text-ENG">ENG</h3>
-            <nav class="flex-nav">
-                <a class="text-nav" href="">Documentation</a>
-                <p class="text-nav">&nbsp/&nbsp</p>
-                <a class="text-nav" href="">Who's using</a>
-            </nav>
-            <img src="./assets/images/company-logo-black.svg" alt="company-logo">
-        </header>
 
+    <!-- header-navigation -->
+    <header class="mb-70_mline-120 flex" id="head-nav">
+
+        <h3 class="text-ENG">ENG</h3>
+        <nav class="flex-nav">
+            <a class="text-nav" href="./documentation.html">Documentation</a>
+            <p class="text-nav">&nbsp/&nbsp</p>
+            <a class="text-nav" href="./who_using.html">Who's using</a>
+        </nav>
+        <img src="./assets/images/company-logo-black.svg" alt="company-logo">
+
+    </header>
+
+    <div class="flex-nav-bar mb-70_mline-120">
+        <!-- side-bar -->
+        <nav class="text-title" id="side-bar">
+            <a class="d-block" href="#intro">INTRODUCTION</a>
+            <a class="d-block" href="#core">CORE COMPONENTS</a>
+            <a class="d-block" href="#react">REACT FUNDAMENTALS</a>
+            <a class="d-block" href="#text">HANDLING TEXT INPUT</a>
+        </nav>
+
+        <!-- main-text -->
         <main class="content">
+
             <section>
-                <h2 class="text-title">INTRODUCTION <sup><small class="chapter">Chapter 1</small> </sup></h2>
-                <p class="text-section">Welcome to the very start of your React Native journey! If you're looking for
-                    environment setup
-                    instructions,
-                    they've moved to <u>their own section</u>. Continue reading for an introduction to the
-                    documentation,
+                <h2 class="text-title" id="intro">INTRODUCTION <sup><small class="chapter-text">
+                            Chapter 1</small></sup></h2>
+                <p class="text-section">Welcome to the very start of your React Native journey! If you're looking
+                    for
+                    environment setup instructions, they've moved to <u>their own section</u>. Continue
+                    reading for an introduction to the documentation,
                     Native Components, React, and more!</p>
             </section>
 
             <section>
-                <h2 class="text-title">CORE COMPONENTS <sup><small class="chapter">Chapter 2</small></sup></h2>
+                <h2 class="text-title" id="core">CORE COMPONENTS <sup><small class="chapter-text">Chapter
+                            2</small></sup></h2>
                 <p class="text-section">React Native is an open source framework for building Android and iOS
-                    applications using React and the
-                    app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s
-                    APIs
-                    as well as to describe the appearance and behavior of your UI using React components: <em>bundles of
-                        reusable, nestable code.</em> You can learn more about React in the next section. But first,
+                    applications using React and the app platform’s native capabiles. With React Native, you
+                    use JavaScript to access your platform’s APIs as well as to describe the appearance and
+                    behavior of your UI using React components: <em>bundles of reusable, nestable code.
+                    </em> You can learn more about React in the next section. But first,
                     let’s cover how components work in React Native.</p>
             </section>
 
             <section>
-                <h2 class="text-title">REACT FUNDAMENTALS <sup><small class="chapter">Chapter 3</small></sup></h2>
+                <h2 class="text-title" id="react">REACT FUNDAMENTALS <sup><small class="chapter-text">Chapter
+                            3</small></sup></h2>
                 <p class="text-section">React Native runs on <u>React,</u> a popular open source library for building
                     user
                     interfaces with JavaScript. To make the most of React Native, it helps to understand React itself.
@@ -78,7 +92,8 @@
             </section>
 
             <section class="end-section--mb">
-                <h2 class="text-title">HANDLING TEXT INPUT <sup><small class="chapter">Chapter 4</small></sup></h2>
+                <h2 class="text-title" id="text">HANDLING TEXT INPUT <sup><small class="chapter-text">Chapter
+                            4</small></sup></h2>
                 <p class="text-section">TextInput is a Core Component that allows the user to enter text. It has an
                     onChangeText prop that takes a function to be called every time the text changed, and
                     an onSubmitEditing prop that takes a function to be called when the text is submitted.</p>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>form</title>
+</head>
+
+<body>
+    <section>
+        <h1 class="mb-20 size-24">Create an Account</h1>
+
+        <form class="flex-column">
+
+            <div class="flex">
+                <div class="flex-column mb-20">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" class="first_name" required>
+                </div>
+
+                <div class="flex-column mb-20">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" class="last_name" required>
+                </div>
+            </div>
+
+            <div class="mb-20">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+                <span class="l-gray">We'll never share your email with anyone else.</span>
+            </div>
+
+            <div class="mb-20">
+
+                <input type="radio" name="sex" id="male" value="male" required>
+                <label for="male" class="male">Male</label>
+
+                <input type="radio" name="sex" id="female" value="female" required>
+                <label for="female" class="female">Female</label>
+
+            </div>
+
+            <div class="flex mb-20">
+                <div class="flex-column">
+                    <label for="country" class="country">Country</label>
+                    <select name="country" id="country" required>
+                        <option class="l-gray" value="" disabled selected>Select</option>
+                        <option value="">Japan</option>
+                        <option value="">Italy</option>
+                        <option value="">Mexico</option>
+                        <option value="">Spain</option>
+                        <option value="">Sweden</option>
+                        <option value="">Ukraine</option>
+                        <option value="">Turkey</option>
+                    </select>
+                </div>
+
+                <div class="flex-column">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" class="city" required>
+                </div>
+            </div>
+
+            <button class="btn mb-20">Sign Up</button>
+
+        </form>
+
+        <div class="text-center mb-20">
+            <p class="l-gray">By clicking the 'Sign Up' button, you confirm that you accept our</p>
+            <p class="l-gray"> <a class="size-13" href="">Terms of Use</a> and <a class="size-13" href="">Privacy
+                    Policy.</a></p>
+        </div>
+        <hr>
+        <div class="flex-center mb-20">
+            <p class="size-15">Have an account?</p>
+            <a class="size-15" href="">Log In</a>
+        </div>
+    </section>
+
+</body>
+
+</html>

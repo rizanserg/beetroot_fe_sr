@@ -1,0 +1,111 @@
+/* text */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.text-ENG {
+    font-family: 'Tourney', cursive;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 6%;
+}
+
+.text-nav {
+    font-family: 'Staatliches';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27.5px;
+    letter-spacing: 3%;
+    color: black;
+    position: relative;
+    right: 300px;
+}
+
+.text-title {
+    font-family: 'Francois One', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 4%;
+}
+
+.chapter-text {
+    font-family: 'Farro', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 4%;
+}
+
+
+.text-section {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+span {
+    background-color: #DADADA;
+}
+
+/* box */
+.mb-70_mline-120 {
+    margin-bottom: 70px;
+    margin-inline: 120px;
+}
+
+.content {
+    width: 785px;
+}
+
+.end-section--mb {
+    margin-bottom: 90px;
+}
+
+/* flex */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-nav {
+    display: flex;
+    align-items: center;
+}
+
+.flex-nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-block {
+    display: block;
+    border-bottom: 2px solid;
+    margin-block: 40px;
+}
+
+/* position */
+
+#head-nav {
+    position: sticky;
+    top: 0px;
+}
+
+#side-bar {
+    position: sticky;
+    top: 60px;
+    height: 500px;
+}
+
+/* background */
+.content {
+    background-image: url(../assets/images/bg-picture.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top 145px right 140px;
+    background-size: 30%;
+}
