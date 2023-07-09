@@ -1,0 +1,61 @@
+@use './variables' as var;
+
+@use './text' as text;
+
+.container {
+    display: grid;
+    grid-template: repeat(2, minmax(200px, auto)) / repeat(2, minmax(200px, 1fr));
+
+    grid-template-areas:
+        "header header"
+        "avatar about";
+    row-gap: 40px;
+    margin: 120px 135px;
+
+    // container-header
+    &__header {
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    // container-avatar
+    &__avatar {
+        grid-area: avatar;
+        width: 430px;
+        height: 430px;
+    }
+
+    // container-about
+    &__about {
+        grid-area: about;
+        text-align: center;
+
+        button {
+            @include text.text-uppercase;
+            background-color: white;
+            padding: 5px 10px;
+            border: 1px solid var.$gold
+        }
+    }
+
+    // &__button {
+    //     @include text.text-uppercase;
+    //     background-color: white;
+    //     padding: 5px 10px;
+    //     border: 1px solid var.$gold
+    // }
+
+    &__title {
+        @include text.text-uppercase;
+        // text-transform: uppercase
+        // text-transform: lowercase
+    }
+
+    &__subtitle {
+        @include text.text-uppercase;
+    }
+}
