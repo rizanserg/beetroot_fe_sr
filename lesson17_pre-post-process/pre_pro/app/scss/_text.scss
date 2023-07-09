@@ -1,0 +1,46 @@
+@use './variables' as var;
+
+@mixin text-color($color) {
+    color: $color;
+}
+
+.text {
+    letter-spacing: 1px;
+}
+
+.text--gold {
+    @include text-color(var.$gold);
+}
+
+.text--gray {
+    @include text-color(var.$gray);
+}
+
+.text--dark-gray {
+    @include text-color(var.$dark-gray);
+}
+
+.text--black {
+    @include text-color(var.$black);
+    padding-inline: 85px;
+    padding-block: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.text--white {
+    @include text-color(var.$white);
+}
+
+@mixin transform-text($case) {
+    text-transform: $case;
+}
+
+@mixin text-uppercase {
+    @include transform-text(uppercase)
+}
+
+@mixin text-lowercase {
+    @include transform-text(lowercase)
+}

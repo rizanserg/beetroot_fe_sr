@@ -1,0 +1,15 @@
+{
+  "name": "brnh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "npm sass -w ./app/scss:./styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.6"
+  }
+}
