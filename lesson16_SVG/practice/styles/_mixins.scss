@@ -14,3 +14,29 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@mixin title-freehand {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+@mixin title-main {
+    font-family: 'Nunito Sans';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+}
+
+@mixin text-cards ($font-size) {
+    font-family: Roboto;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.28px;
+    letter-spacing: 0.2px;
+}
