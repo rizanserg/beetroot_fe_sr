@@ -22,27 +22,65 @@ body {
         height: var.$site-header-height;
         border-bottom: 1px solid var.$lighten-blue;
         @include mix.inline-padding;
+
+        h1 {
+            @include mix.title-freehand;
+        }
     }
 
     &__main {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
         min-height: calc(100% - (var.$site-header-height + var.$site-footer-heigth));
         padding-block: var.$site-section-padding;
         @include mix.inline-padding;
+
+        a {
+            text-decoration: none;
+            color: var.$link-green;
+        }
+
+        h1 {
+            @include mix.title-main;
+        }
+
+        &__h3 {
+            color: var.$l-text-gray;
+            @include mix.text-cards(16px);
+        }
     }
 
     &__footer {
         height: var.$site-footer-heigth;
         background-color: var.$black;
         @include mix.inline-padding;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__h1 {
+            color: #FFF;
+            @include mix.title-freehand;
+        }
+
+        &__logo {
+            display: flex;
+            gap: 12px;
+            padding-top: 40px;
+        }
+
+        &__socials {
+            display: flex;
+            gap: 10px;
+        }
     }
 }
 
 .cards {
     display: flex;
     gap: 30px;
+    @include mix.text-cards(16px);
 }
 
 .card {
@@ -51,6 +89,10 @@ body {
     gap: 30px;
     @include mix.border(8px, var.$light-blue);
     padding: 40px;
+
+    &__h3 {
+        @include mix.text-cards(24px);
+    }
 
     &__img {
         @include mix.border(16px, var.$lighten-blue);
@@ -62,11 +104,27 @@ body {
         @include mix.bg-img('../practice/assets/images/megafon.svg');
     }
 
+    &__img--building {
+        @include mix.bg-img('../practice/assets/images/building-blue.svg');
+    }
+
+    &__img--phone {
+        @include mix.bg-img('../practice/assets/images/phone-blue.svg');
+    }
+
     &:hover {
         border-color: var.$dark-green;
 
         .card__img--megaphone {
             @include mix.bg-img('../practice/assets/images/megaphone-green.svg');
+        }
+
+        .card__img--building {
+            @include mix.bg-img('../practice/assets/images/building-green.svg');
+        }
+
+        .card__img--phone {
+            @include mix.bg-img('../practice/assets/images/phone-green.svg');
         }
     }
 }

@@ -19,23 +19,76 @@ body {
   border-bottom: 1px solid #E8F3FF;
   padding-inline: 135px;
 }
+.site__header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+}
 .site__main {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  min-height: calc(100% - 190px);
+  min-height: calc(100% - 273px);
   padding-block: 100px;
   padding-inline: 135px;
 }
+.site__main a {
+  text-decoration: none;
+  color: #3DB370;
+}
+.site__main h1 {
+  font-family: "Nunito Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0.2px;
+}
+.site__main__h3 {
+  color: #7690A8;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.28px;
+  letter-spacing: 0.2px;
+}
 .site__footer {
-  height: 110px;
+  height: 193px;
   background-color: #16133D;
   padding-inline: 135px;
+}
+.site__footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.site__footer__h1 {
+  color: #FFF;
+  font-family: "Quicksand", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+}
+.site__footer__logo {
+  display: flex;
+  gap: 12px;
+  padding-top: 40px;
+}
+.site__footer__socials {
+  display: flex;
+  gap: 10px;
 }
 
 .cards {
   display: flex;
   gap: 30px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.28px;
+  letter-spacing: 0.2px;
 }
 
 .card {
@@ -45,6 +98,14 @@ body {
   border: 1px solid #D1E7FF;
   border-radius: 8px;
   padding: 40px;
+}
+.card__h3 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.28px;
+  letter-spacing: 0.2px;
 }
 .card__img {
   border: 1px solid #E8F3FF;
@@ -57,11 +118,31 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+.card__img--building {
+  background-image: url("../practice/assets/images/building-blue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card__img--phone {
+  background-image: url("../practice/assets/images/phone-blue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .card:hover {
   border-color: #52C29D;
 }
 .card:hover .card__img--megaphone {
   background-image: url("../practice/assets/images/megaphone-green.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card:hover .card__img--building {
+  background-image: url("../practice/assets/images/building-green.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card:hover .card__img--phone {
+  background-image: url("../practice/assets/images/phone-green.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
