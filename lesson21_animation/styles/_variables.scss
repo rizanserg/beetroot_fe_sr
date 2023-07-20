@@ -1,0 +1,12 @@
+@mixin back($background-image) {
+    height: 360px;
+    width: 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: $background-image;
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 260px;
+    height: 360px;
+    backface-visibility: hidden;
+}

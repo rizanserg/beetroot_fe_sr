@@ -1,0 +1,499 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flip-card, .flip-card-ASc, .flip-card-KSc, .flip-card-QSc, .flip-card-JSc, .flip-card-10c, .flip-card-9c, .flip-card-8c, .flip-card-7c, .flip-card-6c, .flip-card-ASh, .flip-card-KSh, .flip-card-QSh, .flip-card-JSh, .flip-card-10h, .flip-card-9h, .flip-card-8h, .flip-card-7h, .flip-card-6h, .flip-card-ASd, .flip-card-KSd, .flip-card-QSd, .flip-card-JSd, .flip-card-10d, .flip-card-9d, .flip-card-8d, .flip-card-7d, .flip-card-6d, .flip-card-ASs, .flip-card-KSs, .flip-card-QSs, .flip-card-JSs, .flip-card-10s, .flip-card-9s, .flip-card-8s, .flip-card-7s {
+  perspective: 1000px;
+}
+.flip-card__inner {
+  position: relative;
+  width: 260px;
+  height: 360px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card__inner:hover {
+  transform: rotateY(180deg);
+}
+.flip-card__inner--front {
+  width: 260px;
+  height: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/pngwing.com.png);
+  background-size: 260px 360px;
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+.flip-card__inner--back {
+  width: 260px;
+  height: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/spades/6S.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-7s--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/spades/7S.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-8s--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/spades/8S.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-9s--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/spades/9S.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-10s--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/spades/10S.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-JSs--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/spades/JS.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-QSs--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/spades/QS.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-KSs--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/spades/KS.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-ASs--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/spades/AS.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-6d--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/diamonds/6D.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-7d--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/diamonds/7D.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-8d--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/diamonds/8D.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-9d--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/diamonds/9D.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-10d--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/diamonds/10D.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-JSd--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/diamonds/JD.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-QSd--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/diamonds/QD.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-KSd--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/diamonds/KD.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-ASd--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/diamonds/AD.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-6h--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/hearts/6H.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-7h--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/hearts/7H.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-8h--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/hearts/8H.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-9h--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/hearts/9H.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-10h--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/hearts/10H.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-JSh--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/hearts/JH.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-QSh--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/hearts/QH.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-KSh--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/hearts/KH.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-ASh--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/hearts/AH.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-6c--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/clubs/6C.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-7c--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/clubs/7C.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-8c--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/clubs/8C.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-9c--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/clubs/9C.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-10c--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/clubs/10C.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-JSc--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/clubs/JC.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-QSc--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/clubs/QC.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-KSc--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/clubs/KC.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+.flip-card-ASc--back {
+  height: 360px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/clubs/AC.svg);
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  backface-visibility: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */

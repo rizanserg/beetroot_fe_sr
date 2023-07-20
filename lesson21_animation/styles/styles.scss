@@ -1,0 +1,332 @@
+@use "./variables" as var;
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flip-card {
+    perspective: 1000px;
+
+    &__inner {
+        position: relative;
+        width: 260px;
+        height: 360px;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+
+        &:hover {
+            transform: rotateY(180deg);
+        }
+
+        &--front {
+            width: 260px;
+            height: 360px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(../assets/images/pngwing.com.png);
+            background-size: 260px 360px;
+            position: absolute;
+            width: 260px;
+            height: 360px;
+            backface-visibility: hidden;
+        }
+
+        &--back {
+            width: 260px;
+            height: 360px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(../assets/images/spades/6S.svg);
+            transform: rotateY(180deg);
+            position: absolute;
+            width: 260px;
+            height: 360px;
+            backface-visibility: hidden;
+        }
+    }
+}
+
+// spades
+.flip-card-7s {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/spades/7S.svg));
+    }
+}
+
+.flip-card-8s {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/spades/8S.svg));
+    }
+}
+
+.flip-card-9s {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/spades/9S.svg));
+    }
+}
+
+.flip-card-10s {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/spades/10S.svg));
+    }
+}
+
+.flip-card-JSs {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/spades/JS.svg));
+    }
+}
+
+.flip-card-QSs {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/spades/QS.svg));
+    }
+}
+
+.flip-card-KSs {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/spades/KS.svg));
+    }
+}
+
+.flip-card-ASs {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/spades/AS.svg));
+    }
+}
+
+// <!-- Diamonds -->
+.flip-card-6d {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/diamonds/6D.svg));
+    }
+}
+
+.flip-card-7d {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/diamonds/7D.svg));
+    }
+}
+
+.flip-card-8d {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/diamonds/8D.svg));
+    }
+}
+
+.flip-card-9d {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/diamonds/9D.svg));
+    }
+}
+
+.flip-card-10d {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/diamonds/10D.svg));
+    }
+}
+
+.flip-card-JSd {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/diamonds/JD.svg));
+    }
+}
+
+.flip-card-QSd {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/diamonds/QD.svg));
+    }
+}
+
+.flip-card-KSd {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/diamonds/KD.svg));
+    }
+}
+
+.flip-card-ASd {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/diamonds/AD.svg));
+    }
+}
+
+// Hearts
+.flip-card-6h {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/hearts/6H.svg));
+    }
+}
+
+.flip-card-7h {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/hearts/7H.svg));
+    }
+}
+
+.flip-card-8h {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/hearts/8H.svg));
+    }
+}
+
+.flip-card-9h {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/hearts/9H.svg));
+    }
+}
+
+.flip-card-10h {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/hearts/10H.svg));
+    }
+}
+
+.flip-card-JSh {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/hearts/JH.svg));
+    }
+}
+
+.flip-card-QSh {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/hearts/QH.svg));
+    }
+}
+
+.flip-card-KSh {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/hearts/KH.svg));
+    }
+}
+
+.flip-card-ASh {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/hearts/AH.svg));
+    }
+}
+
+// Clubs
+.flip-card-6c {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/clubs/6C.svg));
+    }
+}
+
+.flip-card-7c {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/clubs/7C.svg));
+    }
+}
+
+.flip-card-8c {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/clubs/8C.svg));
+    }
+}
+
+.flip-card-9c {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/clubs/9C.svg));
+    }
+}
+
+.flip-card-10c {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/clubs/10C.svg));
+    }
+}
+
+.flip-card-JSc {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/clubs/JC.svg));
+    }
+}
+
+.flip-card-QSc {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/clubs/QC.svg));
+    }
+}
+
+.flip-card-KSc {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/clubs/KC.svg));
+    }
+}
+
+.flip-card-ASc {
+    @extend .flip-card;
+
+    &--back {
+        @include var.back(url(../assets/images/clubs/AC.svg));
+    }
+}
