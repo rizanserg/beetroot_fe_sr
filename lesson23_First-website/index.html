@@ -6,45 +6,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c415e4c6c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
 </head>
 
 <body>
     <!-- header -->
-    <header class="head">
-        <section class="head__bg">
-            <h1>Bhromaon</h1>
-            <p>Safe Travel Anywhere</p>
-            <div class="form-container">
-                <form>
-                    <div class="form-group">
-                        <label for="search" class="form-label">Search:</label>
-                        <input type="text" id="search" class="form-input" placeholder="Enter your search query"
-                            required>
-                        <button type="submit" class="form-button">Search</button>
-                    </div>
-                </form>
-            </div>
-            <p>Scroll Down</p>
+    <header>
+        <section class="head">
+            <h1 class="head__h1-textsans">Bhromaon</h1>
+            <p class="head__p-textsans">Safe Travel Anywhere</p>
+
+            <form class="form__container">
+                <label for="search" class="form__label"></label>
+                <input type="text" id="search" class="form__input" placeholder="Search Your Travel Destination"
+                    required>
+                <button type="submit" class="form__button">
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i> Search</button>
+            </form>
+            <p class="head__scroll-textsans">Scroll Down</p>
+            <i class="fa-solid fa-chevron-down animate__animated animate__bounce animate__repeat-3"
+                style="color: #fff;"></i>
         </section>
     </header>
     <!-- nav -->
-    <section class="nav-bg">
-        <div>
-            <h1>Bhromaon</h1>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li>Who We Are</li>
-                    <li>What We Do</li>
-                    <li>Travel With Us</li>
-                    <li>Contact Us</li>
-                </ul>
-            </nav>
-        </div>
-    </section>
+    <main>
+        <section class="navi">
+            <div>
+                <h3 class="navi__h3_textsans">Bhromaon</h3>
+            </div>
+            <div>
+                <nav>
+                    <div class="navi__nav">
+                        <a class="navi__a_textAleo" href="">Who We Are</a>
+                        <a class="navi__a_textAleo" href="">What We Do</a>
+                        <a class="navi__a_textAleo" href="">Travel With Us</a>
+                        <a class="navi__a_textAleo" href="">Contact Us</a>
+                    </div>
 
+
+                    <div class="navi__hamburger">
+                        <span class="navi__hamburger__bar"></span>
+                        <span class="navi__hamburger__bar"></span>
+                        <span class="navi__hamburger__bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <article>
+            <section class="why">
+                <div>
+                    <h2 class="why__h2_textAleo">Why Choose Us</h2>
+                    <p class="why__p_textsans">Tion and dislike men who are so beguiled and demoralized by desire by the
+                        charms of pleasure of the
+                        moment, so blinded by desire, that they cannot foresee</p>
+                    <p class="why__p_textsans">Ddislike men who are so beguiled and demoralized by the charms of
+                        pleasure of
+                        the moment, so blinded
+                        by desire, that.</p>
+                    <button type="submit" class="why__button">Explore Places </button>
+                </div>
+                <div class="">
+                    <img class="why__Image1" src="./assets/images/Image 1.png" alt="Image1">
+                    <img class="why__Image2" src="./assets/images/Image 2.png" alt="Image2">
+                </div>
+            </section>
+        </article>
+        <!-- Steps -->
+        <article>
+            <section class="steps">
+                <div class="steps__img">
+                    <img src="./assets/images/search.svg" alt="search">
+                    <p class="steps__p-textAleo">Search Places</p>
+                </div>
+                <div class="steps__img">
+                    <img src="./assets/images/check-circle.svg" alt="check-circle">
+                    <p class="steps__p-textAleo">Select Places</p>
+                </div>
+                <div class="steps__img">
+                    <img src="./assets/images/thumbs-up.svg" alt="thumbs-up">
+                    <p class="steps__p-textAleo">Book & Enjoy</p>
+                </div>
+            </section>
+        </article>
+        <!-- BookNow -->
+        <article class="book">
+            <section class="book__section">
+                <p class="book__p1_textsans">Spain</p>
+                <h4 class="book__h4_textAleo">Grand Spain Madrid</h4>
+                <p class="book__p2_textsans">But I must explain to you how all this mistaken idea of account to
+                    denouncing
+                    pleasure and praising pain was account born and I account will give you
+                    a complete account of the system</p>
+                <button type="submit" class="book__button">book now</button>
+            </section>
+        </article>
+
+        <article class="book2">
+            <section class="book2__section">
+                <p class="book__p1_textsans">Spain</p>
+                <h4 class="book__h4_textAleo">Grand Spain Madrid</h4>
+                <p class="book__p2_textsans">But I must explain to you how all this mistaken idea of account to
+                    denouncing
+                    pleasure and praising pain was account born and I account will give you
+                    a complete account of the system</p>
+                <button type="submit" class="book__button">book now</button>
+            </section>
+        </article>
+        <!-- WhatTouristsSay -->
+        <article class="WhatSay">
+            <h2 class="WhatSay__h2">What Our Tourists Say</h2>
+            <section class="WhatSay__section">
+                <div>
+                    <img class="WhatSay__section--photo" src="./assets/images/ReviewPhoto.png" alt="ReviewPhoto">
+                </div>
+                <div class="WhatSay__book">
+                    <h4 class="WhatSay__book__h4">Sam Sumon</h4>
+                    <p class="WhatSay__book__p"> But I must explain to you how all this mistaken idea of account to
+                        denouncinpleasure and praising
+                        pain But I must explain to you how all this mistaken idea of account to nai denouncing pleasure
+                        and
+                        praising pain was account born and I account will give you a complete account of the system was
+                        account born and I account will give you a nai the complete account of the system</p>
+                </div>
+            </section>
+        </article>
+        <!-- footer -->
+        <footer class="footerInfo">
+            <h3 class="footerInfo__title">Bhromaon</h3>
+            <p class="footerInfo__p">Safe Travel Anywhere</p>
+            <div class="footerInfo__socials">
+                <img class="footerInfo__socials--item" src="./assets/images/facebook-f.svg" alt="facebook">
+                <img class="footerInfo__socials--item" src="./assets/images/twitter.svg" alt="twitter">
+                <img class="footerInfo__socials--item" src="./assets/images/linkedin.svg" alt="linkedin">
+                <img class="footerInfo__socials--item" src="./assets/images/youtube.svg" alt="youtube">
+                <img class="footerInfo__socials--item" src="./assets/images/pinterest.svg" alt="pinterest">
+            </div>
+        </footer>
+    </main>
 </body>
 
 </html>
+
+<script>
+    const hamburger = document.querySelector(".navi__hamburger");
+    const navMenu = document.querySelector(".navi__nav");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+</script>

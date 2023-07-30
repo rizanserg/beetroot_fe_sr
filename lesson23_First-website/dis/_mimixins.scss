@@ -1,0 +1,73 @@
+@use './variables' as var;
+
+@mixin min-mobile-screen {
+    @media screen and (max-width: var.$mobile-screen) {
+        @content;
+    }
+}
+
+@mixin mobile-screen {
+    @media screen and (max-width: var.$tablet-screen) {
+        @content;
+    }
+}
+
+@mixin tablet-screen {
+    @media screen and (max-width: var.$laptops-screen) {
+        @content;
+    }
+}
+
+@mixin laptops-screen {
+    @media screen and (max-width: var.$desktop-screen) {
+        @content;
+    }
+}
+
+@mixin section-padding {
+    padding-inline: var.$desktop-inline-padding;
+
+    @include laptops-screen {
+        padding-inline: var.$laptops-inline-padding;
+    }
+
+    @include tablet-screen {
+        padding-inline: var.$tablet-inline-padding;
+    }
+
+    @include mobile-screen {
+        padding-inline: var.$mobile-inline-padding;
+    }
+
+    @include min-mobile-screen {
+        padding-inline: var.$mobile-inline-padding;
+    }
+}
+
+@mixin textsans($color: var.$white) {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    color: $color;
+}
+
+@mixin textAleo($color: var.$white) {
+    font-family: 'Aleo', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    color: $color;
+}
+
+@mixin p-textsans($color: var.$white) {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 1.6px;
+    color: $color;
+}
