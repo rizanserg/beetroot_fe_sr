@@ -1,6 +1,21 @@
-function testFunction() {
-    for (let i = 0; i < 10; i++) {
-        console.log(i);
-    }
+// Function Declaration
+function testFunction(a, b) {
+    return a + b;
 }
-testFunction();
+console.log(testFunction(2, 3));
+
+// Function Expression
+const test = function (a, b) {
+   return a + b;
+}
+console.log(test(2, 4));
+
+// Arrow Function
+const arrowF = (a, b) => {
+    return a + b;
+}
+console.log(arrowF(2, 5));
+
+// Shortened Arrow Function
+const shortArrowFunction = (a, b) => a + b;
+console.log(shortArrowFunction(2, 6));
