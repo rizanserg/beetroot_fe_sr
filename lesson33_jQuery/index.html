@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson33_jQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="./dist/index.css">
+    <link rel="stylesheet" href="./dist/normalize.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
+
 <body>
-$END$
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/images/logo.svg" alt="logo">
+        </div>
+        <nav class="header__nav">
+            <a href="">Home</a>
+            <a href="">Catalog</a>
+            <a href="">News</a>
+            <a href="">Contacts</a>
+        </nav>
+        <div class="header__panel">
+            <img src="./assets/images/search-icon.svg" alt="search">
+            <img src="./assets/images/profile-icon.svg" alt="profile">
+        </div>
+    </header>
+
+    <article>
+        <section class="slider">
+            <div class="slick1">
+                <img class="slick1__bg1" src="./assets/images/slider1.png">
+                <div class="slick1__content">
+                    <h1 class="slick1__content__title">Find your own style</h1>
+                    <button type="submit" class="slick1__content__btn">View more</button>
+                </div>
+            </div>
+
+            <div class="slick1">
+                <img class="slick1__bg1" src="./assets/images/slider2.png">
+                <div class="slick1__content">
+                    <h1 class="slick1__content__title">expand your horizons</h1>
+                    <button type="submit" class="slick1__content__btn">View more</button>
+                </div>
+            </div>
+
+            <div class="slick1">
+                <img class="slick1__bg1" src="./assets/images/slider3.png">
+                <div class="slick1__content">
+                    <h1 class="slick1__content__title">discover new options</h1>
+                    <button type="submit" class="slick1__content__btn">View more</button>
+                </div>
+            </div>
+        </section>
+    </article>
+<!--    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>-->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                dots: true,
+            });
+        });
+    </script>
 </body>
 </html>
