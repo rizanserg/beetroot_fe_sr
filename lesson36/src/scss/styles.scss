@@ -1,0 +1,104 @@
+.head {
+  background: url("../images/Mask.png"), linear-gradient(243deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+.head-title {
+  text-align: center;
+  padding-top: 330px;
+  &__h1montserrat {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 8px;
+  }
+  &__h4montserrat {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.4px;
+  }
+}
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+}
+//slider
+.slider__dots {
+  position: absolute;
+  left: 95%;
+  top: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50px;
+  list-style: none;
+}
+.slider__dots li button {
+  outline: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: transparent;
+}
+.slider__dots li.slick-active button {
+  background-color: white;
+}
+//navi
+.navi {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  &__nav {
+    display: flex;
+    gap: 90px;
+    &__text {
+      font-family: 'Source Sans 3', sans-serif;
+      color: #FFF;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  &__social {
+    letter-spacing: 10px;
+    &__item {
+      &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.bg-news {
+  background: url("../images/Backgroundnews.png");
+  background-size: cover;
+  height: 978px;
+}
+.map-bg {
+  background: url("../images/Map.png");
+  background-size: cover;
+  height: 700px;
+}
+.footer-bg {
+  background: url("../images/footerBg.png");
+  background-size: cover;
+  height: 549px;
+}
