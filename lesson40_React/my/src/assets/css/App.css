@@ -1,0 +1,123 @@
+.site-header {
+    color: #FFF;
+    font-family: "Lucida Sans Unicode", serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding-left: 135px;
+    padding-block: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-footer {
+    color: #FFF;
+    font-family: 'Lucida Sans Unicode', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding-left: 135px;
+    padding-block: 50px;
+}
+.text-group {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icon-title {
+    height: 30px;
+    width: 35px;
+}
+
+.icon-weather {
+    height: 42px;
+    width: 42px;
+}
+
+.group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding-inline: 135px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+    "Lisbon Lisbon Paris Belgrade"
+    "Venice Tel-Avive Cair New-York"
+    "New-Delhi San-Francisco San-Francisco Tokyo"
+    "Sydney Sydney Sydney Sydney";
+}
+
+.Lisbon { grid-area: Lisbon;
+    border: 2px solid #FFF;
+    background: #39C;
+    text-align: center;
+}
+.Paris { grid-area: Paris;
+    border: 2px solid #FFF;
+    background: #3CC;
+    text-align: center;
+}
+.Belgrade { grid-area: Belgrade;
+    border: 2px solid #FFF;
+    background: #969;
+    text-align: center;
+}
+.Venice { grid-area: Venice;
+    border: 2px solid #FFF;
+    background: #C24747;
+    text-align: center;
+}
+.Tel-Avive { grid-area: Tel-Avive;
+    border: 2px solid #FFF;
+    background: #E2674A;
+    text-align: center;
+}
+.Cair { grid-area: Cair;
+    border: 2px solid #FFF;
+    background: #FC6;
+    text-align: center;
+}
+.New-York { grid-area: New-York;
+    border: 2px solid #FFF;
+    background: #9C9;
+    text-align: center;
+}
+.New-Delhi { grid-area: New-Delhi;
+    border: 2px solid #FFF;
+    background: #699;
+    text-align: center;
+}
+.San-Francisco { grid-area: San-Francisco;
+    border: 2px solid #FFF;
+    background: #C69;
+    text-align: center;
+}
+.Tokyo { grid-area: Tokyo;
+    border: 2px solid #FFF;
+    background: #396;
+    text-align: center;
+}
+.Sydney { grid-area: Sydney;
+    border: 2px solid #FFF;
+    background: #669;
+    text-align: center;
+}
+
