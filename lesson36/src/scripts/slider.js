@@ -1,6 +1,7 @@
-$(document).ready(function () {
+$(document).ready(function(){
     $('.slider').slick({
         dots: true,
-        // dotsClass: 'slider__dots',
+        vertical: true,
+        dotsClass: 'slider__dots',
     });
 });

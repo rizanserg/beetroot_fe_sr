@@ -1,0 +1,62 @@
+@use './variables' as var;
+
+@mixin h1-head {
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+
+@mixin h4-head {
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 5.4px;
+}
+
+@mixin nav-text($color: var.$white) {
+  font-family: 'Source Sans 3', sans-serif;
+  color: $color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin h2($color: var.$black) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: $color;
+}
+
+@mixin subtitle {
+  color: #2C4058;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin dicr {
+  color: #2C4058;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@mixin link {
+  color: #000;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}

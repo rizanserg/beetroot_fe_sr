@@ -1,3 +1,6 @@
+@use './mimixins' as mix;
+@use './variables' as var;
+
 .head {
   background: url("../images/Mask.png"), linear-gradient(243deg, #7E5AFF 16.9%, #55B7FF 83.27%);
   background-size: cover;
@@ -8,22 +11,10 @@
   text-align: center;
   padding-top: 330px;
   &__h1montserrat {
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 8px;
+    @include mix.h1-head;
   }
   &__h4montserrat {
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 5.4px;
+    @include mix.h4-head;
   }
 }
 .arrow {
@@ -68,12 +59,7 @@
     display: flex;
     gap: 90px;
     &__text {
-      font-family: 'Source Sans 3', sans-serif;
-      color: #FFF;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+      @include mix.nav-text;
     }
   }
   &__social {
@@ -86,16 +72,162 @@
     }
   }
 }
+//Projects
+.project {
+  &__title {
+    text-align: center;
+    padding-block: 90px;
+    @include mix.h2;
+  }
+}
 
+.project1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  &__content {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+    padding-right: 100px;
+    &__subtitle {
+      @include mix.subtitle;
+      padding-top: 200px;
+    }
+    &__title {
+      @include mix.h2;
+      padding-bottom: 20px;
+    }
+    &__dicr {
+      @include mix.dicr;
+      padding-bottom: 20px;
+    }
+    &__btn {
+      padding: 10px 20px;
+      width: 190px;
+      height: 50px;
+      background-color: #FFFFFF;
+      border: 1px solid;
+      cursor: pointer;
+      @include mix.nav-text(var.$black)
+    }
+    &__link {
+      @include mix.link;
+      padding-top: 50px;
+    }
+  }
+}
+
+.rectangle1 {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+}
+
+.project2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 200px;
+  &__content {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 200px;
+  }
+}
+.rect-block {
+  position: relative;
+  &__rectangle2 {
+    position: absolute;
+    right: 100px;
+    bottom: -100px;
+  }
+}
+//news
 .bg-news {
   background: url("../images/Backgroundnews.png");
   background-size: cover;
   height: 978px;
+  margin-top: 200px;
 }
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
+}
+.news {
+  position: relative;
+}
+.news .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+.news .slick-prev {
+  left: 25px;
+  background: url("../images/Left.svg") 0 0 / 100% no-repeat;
+}
+.news .slick-next {
+  right: 25px;
+  background: url("../images/Right.svg") 0 0 / 100% no-repeat;
+}
+.news .slick-next:before {
+content: none;
+}
+.news .slick-prev:before {
+  content: none;
+}
+
+
+//GALLERY
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    @include mix.h2;
+    margin-block: 60px;
+  }
+  &__btn {
+    @extend .project1__content__btn;
+    margin-block: 60px;
+  }
+}
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "scott scott photos echo"
+    "scott scott fuse tram";
+}
+.scott { grid-area: scott; }
+.photos { grid-area: photos; }
+.echo { grid-area: echo; }
+.fuse { grid-area: fuse; }
+.tram { grid-area: tram; }
+
+//Contact
 .map-bg {
   background: url("../images/Map.png");
   background-size: cover;
   height: 700px;
+}
+//footer
+.footer {
+  padding-top: 250px;
+  display: flex;
+  justify-content: space-around;
+  &__copyrights {
+    padding-top: 20px;
+    @include mix.nav-text(var.$white);
+  }
 }
 .footer-bg {
   background: url("../images/footerBg.png");
