@@ -152,14 +152,37 @@
   height: 978px;
   margin-top: 200px;
 }
-//.slick-track {
-//  display: flex;
-//}
-.slick-list {
-  overflow: hidden;
-}
+
 .news {
   position: relative;
+  padding: 0 150px;
+  &__item {
+    width: 370px;
+    height: 514px;
+    background-color: #FFFFFF;
+    margin-inline: 20px;
+    &__title {
+      padding: 15px;
+      @include mix.subtitle;
+    }
+    &__discr {
+      padding: 0 15px 25px;
+      @include mix.dicr;
+    }
+    &__author {
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      &__name {
+        @include mix.subtitle;
+        font-size: 18px;
+      }
+      &__date {
+        @include mix.nav-text(var.$blue)
+      }
+    }
+  }
 }
 .news .slick-arrow {
   position: absolute;
@@ -169,11 +192,11 @@
   height: 40px;
 }
 .news .slick-prev {
-  left: 25px;
+  left: 35px;
   background: url("../images/Left.svg") 0 0 / 100% no-repeat;
 }
 .news .slick-next {
-  right: 25px;
+  right: 35px;
   background: url("../images/Right.svg") 0 0 / 100% no-repeat;
 }
 .news .slick-next:before {
@@ -183,6 +206,27 @@ content: none;
   content: none;
 }
 
+.news-dots {
+  display: flex;
+  gap: 2rem;
+  padding-top: 50px;
+  padding-left: 50%;
+  width: 100px;
+  list-style: none;
+}
+.news-dots li button {
+  outline: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: transparent;
+}
+.news-dots li.slick-active button {
+  background-color: white;
+}
 
 //GALLERY
 .gallery {

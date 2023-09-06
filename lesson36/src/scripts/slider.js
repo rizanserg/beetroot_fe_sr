@@ -5,3 +5,15 @@ $(document).ready(function(){
         dotsClass: 'slider__dots',
     });
 });
+
+
+$('.news').slick({
+    arrows: true,
+    dots: true,
+    dotsClass: 'news-dots',
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: true,
+    // centerMode: true,
+});
