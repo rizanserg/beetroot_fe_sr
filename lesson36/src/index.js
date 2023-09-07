@@ -1,8 +1,5 @@
 import '@scss/styles.scss';
 import '@scss/normalize.scss';
-import '@js/Montichello';
-// import '@js/slider';
-
-// import '@js/slick.min';
-// import '@scss/slick.scss';
-// import '@scss/slick-theme.scss';
+import '@js/slider';
+import '@scss/slider.scss';
+import '@scss/form.scss';
