@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function Users() {
+function Users() {
   return <p>Userssss</p>;
 }
+export { Users as Component }
+export default Users;

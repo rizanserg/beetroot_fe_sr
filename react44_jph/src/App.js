@@ -4,7 +4,7 @@ import './assets/scss/App.scss';
 
 function App() {
   const navLink = [
-    { to: '/', label: 'Users' },
+    { to: '/users', label: 'Users' },
     { to: '/posts', label: 'Posts' },
     { to: '/comments', label: 'Comments' },
     { to: '/settings', label: 'Settings' }
