@@ -16,18 +16,18 @@ function Posts() {
   }, []);
 
   return (
-      <div style={{ height: '100%', width: '100%' }}>
-        <DataGrid
-            rows={posts}
-            columns={gridColumns}
-            initialState={{
-              pagination: {
-                paginationModel: { page: 0, pageSize: 10 }
-              }
-            }}
-            pageSizeOptions={[10, 20]}
-        />
-      </div>
+    <div style={{ height: '100%', width: '100%' }}>
+      <DataGrid
+        rows={posts}
+        columns={gridColumns}
+        initialState={{
+          pagination: {
+            paginationModel: { page: 0, pageSize: 10 }
+          }
+        }}
+        pageSizeOptions={[10, 20]}
+      />
+    </div>
   );
 }
 
